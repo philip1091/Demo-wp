@@ -1,65 +1,51 @@
 // pages/me/me.js
 Page({
 
-  /**
-   * Page initial data
-   */
   data: {
-
+    "cn": {
+      text: "我的"
+    },
+    "en": {
+      text: "Me"
+    }
   },
 
-  /**
-   * Lifecycle function--Called when page load
-   */
   onLoad: function (options) {
 
   },
 
-  /**
-   * Lifecycle function--Called when page is initially rendered
-   */
   onReady: function () {
 
   },
 
-  /**
-   * Lifecycle function--Called when page show
-   */
   onShow: function () {
-
+    if (getApp().globalData.userLanguage === "en") {
+      this.setData({
+        content: this.data.en.text
+      })
+    } else if (getApp().globalData.userLanguage === "cn") {
+      this.setData({
+        content: this.data.cn.text
+      })
+    }
   },
 
-  /**
-   * Lifecycle function--Called when page hide
-   */
   onHide: function () {
 
   },
 
-  /**
-   * Lifecycle function--Called when page unload
-   */
   onUnload: function () {
 
   },
 
-  /**
-   * Page event handler function--Called when user drop down
-   */
   onPullDownRefresh: function () {
 
   },
 
-  /**
-   * Called when page reach bottom
-   */
   onReachBottom: function () {
 
   },
 
-  /**
-   * Called when user click on the top right corner to share
-   */
   onShareAppMessage: function () {
 
   }

@@ -1,7 +1,6 @@
 //app.js
 App({
   changeTab: function() {
-    console.log(this.globalData)
     const tabLabels = this.globalData.userLanguage === "en" ? this.globalData.enTab : this.globalData.cnTab
     tabLabels.forEach((item, index)=> {
       wx.setTabBarItem({
@@ -55,8 +54,8 @@ App({
   },
   globalData: {
     userInfo: null,
-    userLanguage: null,
-    cnTab : ["家", "卖", "我的"],
+    userLanguage: "en",
+    cnTab: ["主页", "商店", "我的"],
     enTab: ["Home", "Shop", "Me"]
   }
 })
