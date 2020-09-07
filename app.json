@@ -1,0 +1,39 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/shop/shop",
+    "pages/me/me"
+  ],
+  "tabBar": {
+    "selectedColor": "d81e06",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "Home",
+        "iconPath": "images/home.png",
+        "selectedIconPath": "images/homeRed.png"
+      },
+      {
+        "pagePath": "pages/shop/shop",
+        "text": "Shop",
+        "iconPath": "images/shop.png",
+        "selectedIconPath": "images/shopRed.png"
+        
+      },
+      {
+        "pagePath": "pages/me/me",
+        "text": "Me",
+        "iconPath": "images/me.png",
+        "selectedIconPath": "images/meRed.png"
+      }
+    ]
+  },
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "BottlesXO",
+    "navigationBarTextStyle": "black"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

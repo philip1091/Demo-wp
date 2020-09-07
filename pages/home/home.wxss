@@ -1,0 +1,7 @@
+/* pages/home/home.wxss */
+
+.switch-label {
+  color: lightslategrey;
+  font-size: 25rpx;
+  line-height: 15rpx;
+}
